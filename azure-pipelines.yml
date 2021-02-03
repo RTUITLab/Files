@@ -21,9 +21,8 @@ stages:
       inputs:
         containerRegistry: 'rtuitlab connection by admin'
         repository: 'rtuitlab/files'
-        command: 'build'
+        command: 'buildAndPush'
         Dockerfile: 'Dockerfile'
-        buildContext: 
         tags: |
           $(tag)
           latest
